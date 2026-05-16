@@ -1,44 +1,56 @@
-import { useState } from 'react';
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+
+import 'swiper/css/bundle';
 import './TripSection.scss';
-import FirstTour from "../../../../assets/tour1.PNG";
 
 const TripSection = () => {
-    const [isOpen, setIsOpen] = useState(false);
+  return (
+    <div className="swiper-slide">
+    <Swiper
+      spaceBetween={50}
+      slidesPerView={3}
+      onSlideChange={() => console.log('slide change')}
+      onSwiper={(swiper) => console.log(swiper)}
+    >
+      <SwiperSlide>
+  <img src="/tour1.PNG" alt="Ашхабад" />
+  <h3>Ашхабад</h3>
+  <p>от 300$</p>
+  <button> Подробнее</button>
+</SwiperSlide>
 
-    const toggleDetails = () => {
-        setIsOpen(!isOpen);
-    };
+      <SwiperSlide> <img src="/tour2.jpg" alt="Айваза" />
+  <h3>Айваза</h3>
+  <p>от 600$</p>
+  <button> Подробнее</button> 
+  </SwiperSlide>
 
-    return (
-        <div className="trip-section">
-            <div className='first-tour'>
-                <img
-                    src={FirstTour}
-                    alt='Ашхабад'
-                    className='first-tour__image'
-                />
-                <h3>Ашхабад</h3>
-                <p className="price">от 300$</p>
-            </div>
-            
-            <button 
-                type="button" 
-                onClick={toggleDetails} 
-                className="tour-button"
-            >
-                {isOpen ? "Закрыть" : "Подробнее"}
-            </button>
-            
-            {isOpen && (
-                <div className="tour-details">
-                    <h4>Описание тура:</h4>
-                    <p>Экскурсия по беломраморному Ашхабаду</p>
-                    <p>Длительность: 3 дня / 2 ночи</p>
-                    <p>Включено: отель, завтраки, трансфер</p>
-                </div>
-            )}
-        </div>
-    );
+      <SwiperSlide> <img src="/tour3.PNG" alt="Янги Кала" />
+  <h3>Янги Кала</h3>
+  <p>от 200$</p>
+  <button> Подробнее</button> 
+  </SwiperSlide>
+
+      <SwiperSlide> <img src="/tour4.png" alt="Дарваза" />
+  <h3>Дарваза</h3>
+  <p>от 500$</p>
+  <button> Подробнее</button> 
+  </SwiperSlide>
+
+<SwiperSlide> <img src="/tour5.jpg" alt="Каракум" />
+  <h3>Каракум</h3>
+  <p>от 700$</p>
+  <button> Подробнее</button> 
+  </SwiperSlide>
+
+    </Swiper>
+
+    <h1>  Даты туров </h1>
+    </div>
+  );
 };
 
 export default TripSection;
