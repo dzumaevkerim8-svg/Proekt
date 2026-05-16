@@ -1,0 +1,16 @@
+.footer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 40px;
+    background-color: rgb(146, 153, 149);
+
+    &__info_date {
+        color: white;
+        text-align: left;  
+    }
+
+    &__info {
+        color: white;
+        text-align: right;  
+    }
+}

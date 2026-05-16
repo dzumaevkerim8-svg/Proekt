@@ -1,0 +1,40 @@
+.main-section { 
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    line-height: 0;
+
+    &__image {  
+        width: 100%;
+        height: 600px; 
+        object-fit: cover;
+        display: block;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form {
+     position: absolute;
+    top: 70%;         
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+
+.form-button {
+    padding: 15px 40px;
+    background-color: #e3498db;
+    color: rgb(142, 205, 155);
+    border: none;
+    border-radius: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+
+    &:hover {
+        background-color: #04702c;
+    }
+}
+}
