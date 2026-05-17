@@ -5,5 +5,23 @@
     margin-top: 30px;     
     object-fit: cover;     
     border-radius: 12px;   
+   
   }
 }
+
+button {
+    display: block; 
+    margin: 10px auto;
+width:80px;
+height: 25px;
+color:green;
+background: green($color: #0ad71b);
+border: 1px solid green;
+margin-top: 10px;
+cursor: pointer;
+
+    }
+
+   
+
+    
