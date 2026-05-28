@@ -18,7 +18,7 @@ export const NAVIGATION_LIST = [
     title: 'О нас',
   },
   {
-    to: '/contacts',
+    to: '/contact',
     title: 'Контакты',
   },
 ];
