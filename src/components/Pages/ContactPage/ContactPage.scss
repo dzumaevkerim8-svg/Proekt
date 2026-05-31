@@ -20,22 +20,27 @@ h1 {
 
 .side-image {
     flex: 1;
+    margin-left: 20px;   
+    margin-right: 20px;
     
     img {
         width: 100%;
         border-radius: 16px;
         box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-    }
+       }
 }
 
 .left img {
     max-height: 500px;
     object-fit: cover;
+   
+    
 }
 
 .right img {
     max-height: 500px;
     object-fit: cover;
+  
 }
 
 .contact-center {

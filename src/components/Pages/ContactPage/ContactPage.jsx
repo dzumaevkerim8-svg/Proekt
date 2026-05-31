@@ -26,7 +26,7 @@ const ContactPage = () => {
                             <span className="icon">✉️</span>
                             <div>
                                 <h3>Email</h3>
-                                <p>info@turkmenistan.travel</p>
+                                <p>info.travelasiaheart@gmail.com</p>
                             </div>
                         </div>
 

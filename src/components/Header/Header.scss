@@ -4,7 +4,7 @@
 .header {
     position: sticky;
     top: 0;
-    z-index: 1;
+    z-index: 5;
     padding: 20px 40px;
     background-color: #828282;
     width: 100%;                   
@@ -81,7 +81,7 @@
     }
 
     &__nav-link-item:hover {  
-        color: rgb(32, 78, 118);
+        color: rgb(193, 8, 14);
     }
 
     @include devices($tablet) {
